@@ -1,0 +1,26 @@
+/* Noto Sans Kr 200 - 600 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;600&display=swap");
+
+@import "reset.css";
+@import "canvas.css";
+@import "nav.css";
+@import "overlay.css";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}

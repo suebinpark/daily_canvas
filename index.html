@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 그래픽</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" id="favicon_graphic" href="img/curves.png" />
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div></div>
+      <div>
+        <img
+          class="questionBtn questionBtn_graphic"
+          src="img/question_mark.png"
+        />
+        <img
+          class="monsterBtn"
+          src="img/button_monster.png"
+          onclick="location.href='monster.html';"
+        />
+      </div>
+    </nav>
+
+    <div class="notice">
+      <p class="popup popup_graphic">
+        안녕하세요! <span class="page">오늘의 그래픽</span> 페이지에 오신 것을
+        환영합니다.🎔<br />
+        <span class="page">오늘의 그래픽</span> 페이지는 키보드의 숫자 키를 눌러
+        랜덤한 그래픽을 생성하고 조합해 볼 수 있는 공간입니다. 가끔 그래픽
+        작업을 하다 보면, 마구마구 추상 형태를 만들고 실험하고 싶은 날이 있죠.
+        그런 날 작고 즐거운 보탬이 되길 바라며 만들었어요!
+        <br />
+        직접 숫자 키를 눌러보며 차근히 알아가는 것도 좋지만, 간단한 조작법을
+        알려드릴게요. 여기서는 키보드의
+        <span class="key">1</span>번부터 <span class="key">7</span>번 키까지가
+        유효하게 작동합니다. <span class="key">1</span>과
+        <span class="key">2</span>는 각각 베지어 곡선(bezier curve)으로 이루어진
+        면과 선을, <span class="key">3</span>과 <span class="key">4</span>는
+        속이 찬 타원과 빈 타원을 생성합니다. <span class="key">5</span>와
+        <span class="key">6</span>은 미니미니한 정사각형을 생성합니다.
+        <span class="key">7</span>을 누르면 이스터 에그처럼 단어가 등장해요.<br />
+        그래픽을 무한대로 생성해 보세요. 어쩌면 예상치 못한 즐거움이 여러분을
+        기다리고 있을지도요! 캔버스를 초기화하고 싶을 때는 키보드의
+        <span class="key">Backspace</span> 버튼을 누르고,
+        <span class="key">s/S</span>키로 이미지를 저장할 수 있어요.<br />
+        물음표 아이콘 옆의 귀여운 몬스터 버튼을 통해
+        <span class="page">오늘의 몬스터</span> 페이지에도 접속해보세요! 현재
+        페이지를 벗어나면 캔버스는 자동 초기화돼요.
+      </p>
+    </div>
+
+    <div class="container">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="empty_screen">
+      <p>
+        안녕하세요! <span class="page page--inverted">오늘의 그래픽</span>을
+        찾아주셔서 고맙습니다.<br />
+        해당 페이지는 화면의 너비와 높이가 700px 이상인 경우 활성화됩니다. 창의
+        크기를 조절하거나 다른 디바이스로 재접속해 주세요. 좋은 하루
+        보내세요.<br />
+        🎔 수빈 🎔
+      </p>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script src="js/canvasSetting.js"></script>
+    <script src="js/createShapes.js"></script>
+    <script src="js/draw.js"></script>
+    <script src="js/navGraphic.js"></script>
+  </body>
+</html>
