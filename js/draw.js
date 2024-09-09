@@ -44,9 +44,9 @@ window.addEventListener("keydown", function (e) {
     }
   }
 
-  if (keyPressCount >= 100) {
-    this.document.body.style.backgroundColor = getRandomColor();
-  } else {
+  // if (keyPressCount >= 100) {
+  //   this.document.body.style.backgroundColor = getRandomColor();
+  // } else {
     this.document.body.style.backgroundColor = "black";
-  }
+  // }
 });
